@@ -6,7 +6,7 @@ function MealItem({title, imageUrl, duration, complexity, affordability }){
             <Pressable
                 android_ripple={{color: '#ccc'}} 
                 style={({pressed}) => [styles.button, pressed ? styles.buttonPressed : null]}
-                onPress={onPress}
+                
             >
                 <View style={styles.innerContainer}>
                     <View>
@@ -64,5 +64,8 @@ const styles = StyleSheet.create({
     detailItem:{
         marginHorizontal:4,
         fontSize: 12,
+    },
+    buttonPressed:{
+        opacity: 0.5,
     }
 })
